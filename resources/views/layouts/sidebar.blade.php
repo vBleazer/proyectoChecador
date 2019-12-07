@@ -1,76 +1,83 @@
-<!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+<!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="/home" class="brand-link">
+      <img src="{{asset('app_assets/dist/img/logoUabcsDasc.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">UABCS DASC</span>
+    </a>
 
-      <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('home') }}">
-        <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="{{asset('app_assets/dist/img/userIcon.jpg')}}" class="img-circle elevation-2" alt="User Image">
         </div>
-        <div class="sidebar-brand-text mx-3">Checador <sup>2.0</sup></div>
-      </a>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider my-0">
-
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
-        <a class="nav-link" href="{{ route('home') }}">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider"> 
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Addons
+        <div class="info">
+          <a href="/home" class="d-block">{{ Auth::user()->nombre }}</a>
+        </div>
       </div>
 
-      <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item ">
-        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Pages</span>
-        </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Login Screens:</h6>
-            <a class="collapse-item" href="login.html">Login</a>
-            <a class="collapse-item" href="register.html">Register</a>
-            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-            <div class="collapse-divider"></div>
-            <h6 class="collapse-header">Other Pages:</h6>
-            <a class="collapse-item" href="404.html">404 Page</a>
-            <a class="collapse-item active" href="blank.html">Blank Page</a>
-          </div>
-        </div>
-      </li>
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          @if(Auth::user()->role == 2 )
+            <li class="nav-item ">
+              <a href="/home" class="nav-link {{ (request()->is('home*')) ? 'active' : '' }}">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  Dashboard
+                </p>
+              </a>
+            </li>
+          @endif
 
-       
-      <!-- Nav Item - Tables -->
-      <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
-      </li>
+          @if(Auth::user()->role == 1 )
+            <li class="nav-item">
+              <a href="/proyectos" class="nav-link {{ (request()->is('proyectos*')) ? 'active' : '' }}">
+                <i class="nav-icon fas fa-project-diagram"></i>
+                <p>
+                  Proyectos
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/usuarios" class="nav-link {{ (request()->is('usuarios*')) ? 'active' : '' }}">
+                <i class="nav-icon fas fa-users"></i>
+                <p>
+                  Usuarios
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/configuracion" class="nav-link {{ (request()->is('configuracion*')) ? 'active' : '' }}">
+                <i class="nav-icon fas fa-edit"></i>
+                <p>
+                  Configuración
+                </p>
+              </a>
+            </li>
+          @endif
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
 
-      @if( Auth::user()->hasPermissionTo('Visualizar usuarios'))
-       <!-- Nav Item - Tables -->
-      <li class="nav-item {{ (request()->is('users*')) ? 'active' : '' }}">
-        <a class="nav-link" href="{{ route('users') }}">
-          <i class="fas fa-fw fa-users"></i>
-          <span>Users</span></a>
-      </li>
-      @endif
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+    <a class="dropdown-item" href="{{ route('logout') }}"
+       onclick="event.preventDefault();
+                     document.getElementById('logout-form').submit();">
+        {{ __('Logout') }}
+    </a>
 
-      <!-- Divider -->
-      <hr class="sidebar-divider d-none d-md-block">
-
-      <!-- Sidebar Toggler (Sidebar) -->
-      <div class="text-center d-none d-md-inline">
-        <button class="rounded-circle border-0" id="sidebarToggle"></button>
-      </div>
-
-    </ul>
-    <!-- End of Sidebar -->
+    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+        @csrf
+    </form>
+  </aside>

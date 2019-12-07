@@ -19,7 +19,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password','lastname','date_of_birth','phone_number','status'
+        'nombre', 'apellidos', 'fechaNacimiento', 'telefono', 'email', 'password', 'status', 'matricula'
     ];
 
     /**
@@ -39,4 +39,13 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function checks(){
+        
+        return $this->hasMany(Check::class);
+    }
+
+    public function projects(){
+        return $this->belongsToMany(Project::class, 'user_project');
+    }
 }

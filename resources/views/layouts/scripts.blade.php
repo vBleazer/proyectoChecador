@@ -1,9 +1,6 @@
-<!-- Bootstrap core JavaScript-->
-  <script src="{{ asset('app_assets/vendor/jquery/jquery.min.js') }}"></script>
-  <script src="{{ asset('app_assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-
-  <!-- Core plugin JavaScript-->
-  <script src="{{ asset('app_assets/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
-
-  <!-- Custom scripts for all pages-->
-  <script src="{{ asset('app_assets/js/sb-admin-2.min.js') }}"></script>
+<!-- jQuery -->
+<script src="{{asset('app_assets/plugins/jquery/jquery.min.js')}}"></script>
+<!-- Bootstrap 4 -->
+<script src="{{asset('app_assets/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<!-- AdminLTE App -->
+<script src="{{asset('app_assets/dist/js/adminlte.min.js')}}"></script>

@@ -23,8 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {   
-        $section_name = "Dashboard";
-
+        $section_name = "Home";
         return view('home',compact('section_name'));
     }
 }
