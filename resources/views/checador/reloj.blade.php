@@ -63,16 +63,16 @@
             <input type="text" name="matricula" class="form-control" placeholder="matricula">
 
             <div class="input-group-append">
-              <button type="submit" class="btn"><i class="fas fa-arrow-right text-muted"></i></button>
+              <button type="submit" class="btn"><i class="fas fa-share-square text-muted"></i></button>
             </div>
           </div>
         </form>
         <!-- /.lockscreen credentials -->
-
+     
       </div>
       <!-- /.lockscreen-item -->
       <div class="help-block text-center" style="font-weight: bold;">
-        Ingresa tu matricula para checar tu entrada
+        INGRESA SU MATRICULA
       </div>
       
     </div>

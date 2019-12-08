@@ -21,7 +21,7 @@
  text-align: center;
  font-size: 1.5em;
  margin-bottom: 5px;
- background: rgba(0,0,0,.5);
+ background: #67c5eb;
  padding: 20px;
  width: 100%;
 }
@@ -32,7 +32,7 @@
  padding: 20px;
  font-size: 4em;
  text-align: center;
- background: rgba(0,0,0,.5);
+ background: rgba(82, 245, 177, 0.5);
 }
 
 .reloj .caja-segundos{

@@ -5,7 +5,7 @@
 @section('title', 'Checar')
 
 @section('content')
-<div class="hold-transition lockscreen">
+<div class="hold-transition lockscreen" >
     <div class="lockscreen-wrapper" style="margin-top: 0px">
       <div class="lockscreen-logo">
         <a href="../../index2.html"><b>UABCS</b>Dasc</a>
@@ -29,7 +29,7 @@
       <div class="lockscreen-item">
         <!-- lockscreen image -->
         <div class="lockscreen-image">
-          <img src="{{asset('app_assets/dist/img/userIcon.jpg')}}" alt="User Image">
+          <img src="{{asset('app_assets/dist/img/userIcon.JPG')}}" alt="User Image">
         </div>
         <!-- /.lockscreen-image -->
 
@@ -49,7 +49,7 @@
       </div>
       <!-- /.lockscreen-item -->
       <div class="help-block text-center">
-        Ingresa tu matricula para checar tu entrada
+      INGRESA TU MATRICULA
       </div>
       
     </div>
