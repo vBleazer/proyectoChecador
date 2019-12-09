@@ -22,7 +22,7 @@
     <div  class="login-box">
 
         <div class="login-logo">
-            <a href="../../index2.html"><img src="{{asset('app_assets/dist/img/uabs.PNG')}}" alt="logo" style=" z-index:3; width:120%;  margin-bottom: 15px;margin-left: -50px;"></a>
+            <a href="../../index2.html"><img src="{{asset('app_assets/dist/img/uabs.PNG')}}" alt="logo" style=" z-index:3; width:100%; margin-bottom: 15px;margin-left: -5px;"></a>
         </div>
 
         <div class="card">
@@ -63,15 +63,7 @@
                   </div>
                 </div>
 
-                <div class="row">
-                  <div class="col-8">
-                    <div class="icheck-primary">
-                      <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }} >
-                      <label for="remember">
-                        RECORDAR  
-                      </label>
-                    </div>
-                  </div>
+              
                   <!-- /.col -->
                   <div class="col-4">
                     <button type="submit" class="btn btn-primary btn-block">

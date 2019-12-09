@@ -30,7 +30,7 @@
           <div class="col-12">
 
             @if(!empty($checkEntrada))
-              <div class="callout callout-info" style="margin-top: 1.5%; background: #01c34f; color: white;">
+              <div class="callout callout-info" style="margin-top: 1.5%; background:#2B4B68; color: white;">
                 <h5><i class="far fa-check-circle"></i> Entrada Registrada</h5>
                 Esta pagina solo estara disponible durante unos segundos.
 
@@ -39,7 +39,7 @@
             @endif  
 
             @if($check->status == "concluida")
-              <div class="callout callout-info" style="margin-top: 1.5%; background: #01c34f; color: white;">
+              <div class="callout callout-info" style="margin-top: 1.5%; background: #901b26; color: white;">
                 <h5><i class="far fa-check-circle"></i> Salida Registrada</h5>
                 Esta pagina solo estara disponible durante unos segundos.
 
@@ -64,39 +64,6 @@
                   <h4>
                     <div class="container-fluid">
                       <div class="row">
-                        <div class="col-md-3">
-
-                          <!-- Profile Image -->
-                          <div class="card card-primary card-outline">
-                            <div class="card-body box-profile">
-                              <div class="text-center">
-                                <img class="profile-user-img img-fluid img-circle"
-                                     src="{{asset('app_assets/dist/img/usuario.png')}}"
-                                     alt="User profile picture">
-                              </div>
-
-                              <h3 class="profile-username text-center">{{$usuario->nombre}}</h3>
-
-                              <p class="text-muted text-center">{{$usuario->apellidos}}</p>
-
-                              <ul class="list-group list-group-unbordered mb-3">
-                                <li class="list-group-item">
-                                  <b>F. Nacimiento</b> <a class="float-right">{{$usuario->fechaNacimiento}}</a>
-                                </li>
-                                <li class="list-group-item">
-                                  <b>Telefono</b> <a class="float-right">{{$usuario->telefono}}</a>
-                                </li>
-                                <li class="list-group-item">
-                                  <b>Email</b> <a class="float-right">{{$usuario->email}}</a>
-                                </li>
-                              </ul>
-
-                            </div>
-                            <!-- /.card-body -->
-                          </div>
-                          <!-- /.card -->
-                        </div>
-                        <!-- /.col -->
                         <div class="col-md-9">
                           <div class="card">
                             <div class="card-header p-2">
@@ -111,7 +78,7 @@
                                   <div class="card-body">
                                     @if(!empty($checkEntrada))
                                       <div class="form-group">
-                                        <label for="inputName">Info. Check</label>
+                                        <label for="inputName">Información de Entrada</label>
                                         <div class="text-muted">
                                           <label class="ml-4"><a href="#">Hora de entrada :</a> {{$check->horaEntrada}}</label>
                                         </div>
@@ -119,7 +86,7 @@
                                     @endif
                                     @if($check->status == "concluida")
                                       <div class="form-group">
-                                        <label for="inputName">Info. Check</label>
+                                        <label for="inputName">Informacion de salida</label>
                                         <div class="text-muted">
                                           <label class="ml-4"><a href="#">Hora de entrada :</a> {{$check->horaEntrada}}</label><br>
                                           <label class="ml-4"><a href="#">Hora de salida :</a> {{$check->horaSalida}}</label><br>
@@ -128,7 +95,7 @@
                                       </div>
                                     @endif
                                     <div class="form-group">
-                                      <label for="inputName">Checks</label>
+                                      <label for="inputName">Total de entradas</label>
                                       <div class="text-muted">
                                         <label class="ml-4"><a href="#">Total checks :</a> {{$checks}}</label>
                                       </div>
@@ -147,6 +114,39 @@
                             </div><!-- /.card-body -->
                           </div>
                           <!-- /.nav-tabs-custom -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-md-3">
+
+                          <!-- Profile Image -->
+                          <div class="card card-primary card-outline" style="border-top:#11d64d">
+                            <div class="card-body box-profile">
+                              <div class="text-center">
+                                <img class="profile-user-img img-fluid img-circle"
+                                     src="{{asset('app_assets/dist/img/usuario.png')}}"
+                                     alt="User profile picture">
+                              </div>
+
+                              <h3 class="profile-username text-center">{{$usuario->nombre}}</h3>
+
+                              <p class="text-muted text-center">{{$usuario->apellidos}}</p>
+
+                              <ul class="list-group list-group-unbordered mb-3">
+                                <li class="list-group-item">
+                                  <b>F. Nacimiento:</b> <a class="float-right">{{$usuario->fechaNacimiento}}</a>
+                                </li>
+                                <li class="list-group-item">
+                                  <b>Telefono:</b> <a class="float-right">{{$usuario->telefono}}</a>
+                                </li>
+                                <li class="list-group-item">
+                                  <b>Email:</b> <a class="float-right">{{$usuario->email}}</a>
+                                </li>
+                              </ul>
+
+                            </div>
+                            <!-- /.card-body -->
+                          </div>
+                          <!-- /.card -->
                         </div>
                         <!-- /.col -->
                       </div>

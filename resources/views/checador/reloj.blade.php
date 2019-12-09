@@ -32,7 +32,7 @@
       @endif
 
       <div class="lockscreen-logo">
-        <a href="../../index2.html"><img src="{{asset('app_assets/dist/img/uabs.PNG')}}" alt="logo" style="z-index:3; width:100%; margin-bottom: 15px;margin-left: -50px;"></a>
+        <a href="../../index2.html"><img src="{{asset('app_assets/dist/img/uabs.PNG')}}" alt="logo" style="z-index:3; width:100%; margin-bottom: 15px;margin-left: -5px;"></a>
       </div>
 
       <div class="wrap">

@@ -28,7 +28,7 @@
             <li class="nav-item ">
               <a href="/home" class="nav-link {{ (request()->is('home*')) ? 'active' : '' }}" style="background-color:#e2e2e2">
                 <i class="nav-icon fas fa-tachometer-alt" style="color:#000000"></i>
-                <p style="color:#fff">
+                <p style="color:#000000">
                   Dashboard
                 </p>
               </a>
