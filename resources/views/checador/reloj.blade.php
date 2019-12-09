@@ -40,8 +40,8 @@
               <div class="fecha">
                   <p id="diaSemana" class="diaSemana"></p>
               </div>
-              <div class="reloj">
-                  <p id="hora" class="hora" style="color:#fff"></p>
+              <div class="reloj" style=" background:#2B4B68;">
+                  <p id="hora" class="hora" style="color:#fff;"></p>
               </div>
           </div>
       </div>
