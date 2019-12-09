@@ -18,16 +18,16 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-<body class="hold-transition login-page" style="background-color:#fff">
+<body class="hold-transition login-page" style="background-color:#2B4B68  ">
     <div  class="login-box">
 
         <div class="login-logo">
-            <a href="../../index2.html"><b>UABCS</b>Dasc</a>
+            <a href="../../index2.html"><img src="{{asset('app_assets/dist/img/uabs.PNG')}}" alt="logo" style=" z-index:3; width:120%;  margin-bottom: 15px;margin-left: -50px;"></a>
         </div>
 
         <div class="card">
 
-            <div class="card-body login-card-body">
+            <div class="card-body login-card-body"  style="background: #fff; border-radius: 50px 20px;">
               <p class="login-box-msg">INICIAR SESION</p>
 
               <form method="POST" action="{{ route('login') }}">

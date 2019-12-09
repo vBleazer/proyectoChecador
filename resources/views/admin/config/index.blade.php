@@ -9,7 +9,7 @@
     <!-- general form elements -->
     <div class="card card-primary">
       <div class="card-header">
-        <h3 class="card-title">Editar Cronometro</h3>
+        <h3 class="card-title">EDITAR CRONOMETRO</h3>
       </div>
       <!-- /.card-header -->
       <!-- form start -->
@@ -17,7 +17,7 @@
         @csrf
         <div class="card-body">
           <div class="form-group">
-            <label for="exampleInputEmail1">Numero de Segundos</label>
+            <label for="exampleInputEmail1">SEGUNDOS</label>
             <input type="number" class="form-control" placeholder="Ingrese los segundos" name="segundos">
           </div>
         </div>

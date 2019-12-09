@@ -24,7 +24,7 @@
                       
                       @if(session('success'))
                         <div class="alert alert-success alert-dismissible fade show" role="alert">
-                          <strong>Great</strong> Your process has finished successfully
+                          <strong>Excelente!</strong> Su proceso ha finalizado con éxito.
                           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>
@@ -33,7 +33,7 @@
 
                       @if(session('error'))
                         <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                          <strong>Error!</strong> The proccess hasnt finished, verify your info
+                          <strong>Error!</strong> El proceso no ha terminado, verifica tu información
                           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>

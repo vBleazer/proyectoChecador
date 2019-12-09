@@ -18,7 +18,7 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-<body class="hold-transition lockscreen">
+<body class="hold-transition lockscreen" style="background:#2B4B68">
 <!-- Automatic element centering -->
 <div class="lockscreen-wrapper" style="margin-top: 5%">
 
@@ -32,7 +32,7 @@
       @endif
 
       <div class="lockscreen-logo">
-        <a href="../../index2.html"><b>UABCS</b>Dasc</a>
+        <a href="../../index2.html"><img src="{{asset('app_assets/dist/img/uabs.PNG')}}" alt="logo" style="z-index:3; width:100%; margin-bottom: 15px;margin-left: -50px;"></a>
       </div>
 
       <div class="wrap">
@@ -41,7 +41,7 @@
                   <p id="diaSemana" class="diaSemana"></p>
               </div>
               <div class="reloj">
-                  <p id="hora" class="hora"></p>
+                  <p id="hora" class="hora" style="color:#fff"></p>
               </div>
           </div>
       </div>
@@ -51,8 +51,8 @@
       <!-- START LOCK SCREEN ITEM -->
       <div class="lockscreen-item">
         <!-- lockscreen image -->
-        <div class="lockscreen-image">
-          <img src="{{asset('app_assets/dist/img/userIcon.jpg')}}" alt="User Image">
+        <div class="lockscreen-image" style="background:#3c6a7b">
+          <img src="{{asset('app_assets/dist/img/userIcon.PNG')}}" alt="User Image">
         </div>
         <!-- /.lockscreen-image -->
 
@@ -71,7 +71,7 @@
      
       </div>
       <!-- /.lockscreen-item -->
-      <div class="help-block text-center" style="font-weight: bold;">
+      <div class="help-block text-center" style="font-weight: bold; color:#fff;" >
         INGRESA SU MATRICULA
       </div>
       

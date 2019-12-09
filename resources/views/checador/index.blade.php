@@ -36,7 +36,7 @@
 
                 <h4 class="segundos float-right" style="font-size: 50px; margin-top: -3%; font-weight: bold;"></h4>
               </div>
-            @endif
+            @endif  
 
             @if($check->status == "concluida")
               <div class="callout callout-info" style="margin-top: 1.5%; background: #01c34f; color: white;">
@@ -71,7 +71,7 @@
                             <div class="card-body box-profile">
                               <div class="text-center">
                                 <img class="profile-user-img img-fluid img-circle"
-                                     src="{{asset('app_assets/dist/img/userIcon.jpg')}}"
+                                     src="{{asset('app_assets/dist/img/usuario.png')}}"
                                      alt="User profile picture">
                               </div>
 

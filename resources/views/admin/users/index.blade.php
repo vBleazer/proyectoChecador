@@ -14,7 +14,8 @@
 						<h3>Usuarios Registrados</h3>
 					</div>
 					<div class="col-md">
-						<button class="btn btn-primary float-right" data-toggle="modal" data-target="#Modal">Agregar</button>
+						<input class="float-right" type="image" src="{{asset('app_assets/dist/img/agregar.png')}}" width="50"  data-toggle="modal" data-target="#Modal" >
+						
 					</div>
 				</div>
      		</div>
@@ -25,7 +26,6 @@
 					<div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch registro-{{$usuario->id}}">
 				      <div class="card bg-light">
 				        <div class="card-header text-muted border-bottom-0">
-				          Digital Strategist
 				        </div>
 				        <div class="card-body pt-0">
 				          <div class="row">
@@ -38,7 +38,7 @@
 				              </ul>
 				            </div>
 				            <div class="col-5 text-center">
-				              <img src="{{asset('app_assets/dist/img/userIcon.jpg')}}" alt="" class="img-circle img-fluid">
+				              <img src="{{asset('app_assets/dist/img/usuario-registrados.png')}}" alt="" class="img-circle img-fluid">
 				            </div>
 				          </div>
 				        </div>

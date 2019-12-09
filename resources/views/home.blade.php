@@ -29,7 +29,7 @@
       <div class="lockscreen-item">
         <!-- lockscreen image -->
         <div class="lockscreen-image">
-          <img src="{{asset('app_assets/dist/img/userIcon.JPG')}}" alt="User Image">
+          <img src="{{asset('app_assets/dist/img/userIcon.png')}}" alt="User Image">
         </div>
         <!-- /.lockscreen-image -->
 
